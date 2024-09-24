@@ -78,10 +78,10 @@
 \setbeamercolor{frametitle}{bg=tfblue}
 
 % Ggf. auskommentieren, falls kein Inhaltsverzeichnis vor jeder Section
-\AtBeginSection{
-	\addtocounter{framenumber}{-1}
-	\frame{\tableofcontents[currentsection,hideothersubsections]}
-}
+%\AtBeginSection{
+%	\addtocounter{framenumber}{-1}
+%	\frame{\tableofcontents[currentsection,hideothersubsections]}
+%}
 
 \title[]{MANVSim: Simulation eines Massenanfalls von Verletzten}
 \subtitle[]{Bachelor-Abschlussprojekt/Masterprojekt SoSe 2024}
@@ -91,13 +91,13 @@
 \begin{document}
 \frame{\titlepage}
 
-\begin{frame}{Inhalt}
-	\tableofcontents[hideallsubsections]
-\end{frame}
+%\begin{frame}{Inhalt}
+%	\tableofcontents[hideallsubsections]
+%\end{frame}
 
 \include{sections/intro}
 \include{sections/manv}
-\include{sections/backend}
+\include{sections/server}
 \include{sections/app}
 \include{sections/simulation}
 
