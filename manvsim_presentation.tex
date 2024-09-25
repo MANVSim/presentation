@@ -1,7 +1,7 @@
 \documentclass[10pt,aspectratio=169]{beamer}
 
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\usepackage[german]{babel}
 \usepackage[babel]{csquotes}
 \usepackage[T1]{fontenc}
 %\usepackage{enumitem}
@@ -16,8 +16,10 @@
 
 \usepackage{array}
 
-\usepackage[backend=biber]{biblatex}
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
 \bibliography{references.bib}
+
+\usepackage{url}
 
 % used for color define
 \usepackage{color}
@@ -77,6 +79,7 @@
 \setbeamercolor{background canvas}{bg=white}
 \setbeamercolor{frametitle}{bg=tfblue}
 
+% TODO: Reenable when bug with TOC is fixed?
 % Ggf. auskommentieren, falls kein Inhaltsverzeichnis vor jeder Section
 %\AtBeginSection{
 %	\addtocounter{framenumber}{-1}
@@ -102,7 +105,7 @@
 % Refs
 %
 
-\begin{frame}{Referenzen}
+\begin{frame}[allowframebreaks]{Referenzen}
 	\printbibliography
 \end{frame}
 
