@@ -21,28 +21,33 @@
 
 
 \begin{frame}{Server: Datenhaltung}
-	\begin{itemize}
-		\itemsep 12pt
-		\item[] Trennung von Basis- und Spieldaten
-		\begin{itemize}
-			\itemsep 2pt
-			\item[$\rightarrow$] In-memory Objekte für Spieldaten
-			\item[$\rightarrow$] Datenbank für Template-Objekte   
-		\end{itemize}
-		\item[] Vorteile:
-		\begin{itemize}
-			\itemsep 2pt
-			\item Unabhängigkeit von ORM
-			\item Konstante schnelle Zugriffszeiten
-			\item Kapselung
-		\end{itemize}
-		\item[] Nachteile:
-		\begin{itemize}
-			\itemsep 2pt
-			\item Erhöhte Komplexität
-			\item Synchronisation
-		\end{itemize}
-	\end{itemize}
+	\begin{columns}
+		\column{0.7\linewidth}
+			\begin{itemize}
+				\itemsep 12pt
+				\item[] Trennung von Basis- und Spieldaten
+				\begin{itemize}
+					\itemsep 2pt
+					\item[$\rightarrow$] In-memory Objekte für Spieldaten
+					\item[$\rightarrow$] Datenbank für Template-Objekte   
+				\end{itemize}
+				\item[] Vorteile:
+				\begin{itemize}
+					\itemsep 2pt
+					\item Unabhängigkeit von ORM
+					\item Konstante schnelle Zugriffszeiten
+					\item Kapselung
+				\end{itemize}
+				\item[] Nachteile:
+				\begin{itemize}
+					\itemsep 2pt
+					\item Erhöhte Komplexität
+					\item Synchronisation
+				\end{itemize}
+			\end{itemize}
+		\column{0.3\linewidth}
+			\includegraphics[height=\textheight]{images/server/datenhaltung.pdf}
+	\end{columns} 
 \end{frame}
 
 
