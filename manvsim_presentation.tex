@@ -74,6 +74,9 @@
 %\end{beamercolorbox}}
 
 \setbeamertemplate{caption}[numbered]
+\setbeamertemplate{}{\hfill\includegraphics}
+\titlegraphic{\hfill\includegraphics[width=1.5cm]{images/cau-tf-inf.png}}%\hspace{0.2cm}\vspace{0cm}}
+
 
 \setbeamercolor{title separator}{fg=tfblue, bg=tfblue}
 \setbeamercolor{background canvas}{bg=white}
@@ -92,7 +95,7 @@
 \date{27. September 2024}
 
 \begin{document}
-\frame{\titlepage}
+\frame[noframenumbering, plain]{\titlepage}
 
 \include{sections/manv}
 \include{sections/simulation}
